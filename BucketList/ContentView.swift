@@ -6,42 +6,31 @@
 //
 
 import SwiftUI
-import LocalAuthentication
+import MapKit
 
 struct ContentView: View {
-    @State private var isUnlocked = false
-
+    @State private var locations = [Location]()
+    
+    let startPosition = MapCameraPosition.region(
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 56, longitude: -3),
+            span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
+        )
+    )
+    
     var body: some View {
-        VStack {
-            if isUnlocked {
-                Text("Unlocked")
-            } else {
-                Text("Locked")
-            }
-        }
-        .onAppear(perform: authenticate)
-    }
-
-    func authenticate() {
-        let context = LAContext()
-        var error: NSError?
-
-        // check whether biometric authentication is possible
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            // its possible, so go ahead and use it
-            let reason = "We need to unlock your data."
-
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
-                // authentication has now completed
-                if success {
-                    // authenticated successfully
-                    isUnlocked = true
-                } else {
-                    // there was a problem
+        MapReader { proxy in
+            Map(initialPosition: startPosition) {
+                ForEach(locations) { location in
+                    Marker(location.name, coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
                 }
             }
-        } else {
-            // no biometrics
+            .onTapGesture { position in
+                if let coordinate = proxy.convert(position, from: .local) {
+                    let newLocation = Location(id: UUID(), name: "New location", description: "", latitude: coordinate.latitude, longitude: coordinate.longitude)
+                    locations.append(newLocation)
+                }
+            }
         }
     }
 }
