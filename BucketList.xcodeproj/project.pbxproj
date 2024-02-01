@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F8142D202B6B5E9F002BCCAD /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8142D1F2B6B5E9F002BCCAD /* ContentView-ViewModel.swift */; };
-		F8570DF52B62150F002FA47C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8570DF42B62150F002FA47C /* Location.swift */; };
-		F8C26E482B698E5D003C8487 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C26E472B698E5D003C8487 /* EditView.swift */; };
-		F8C26E4A2B6B5047003C8487 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C26E492B6B5047003C8487 /* Result.swift */; };
+		F8142D202B6B5E9F002BCCAD /* Content.viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8142D1F2B6B5E9F002BCCAD /* Content.viewmodel.swift */; };
+		F8570DF52B62150F002FA47C /* Location.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8570DF42B62150F002FA47C /* Location.model.swift */; };
+		F8C26E482B698E5D003C8487 /* Edit.view.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C26E472B698E5D003C8487 /* Edit.view.swift */; };
+		F8C26E4A2B6B5047003C8487 /* Result.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C26E492B6B5047003C8487 /* Result.model.swift */; };
 		F8C449902B45C47E00F98AE6 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4498F2B45C47E00F98AE6 /* BucketListApp.swift */; };
-		F8C449922B45C47E00F98AE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C449912B45C47E00F98AE6 /* ContentView.swift */; };
+		F8C449922B45C47E00F98AE6 /* Content.view.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C449912B45C47E00F98AE6 /* Content.view.swift */; };
 		F8C449942B45C47F00F98AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C449932B45C47F00F98AE6 /* Assets.xcassets */; };
 		F8C449972B45C47F00F98AE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C449962B45C47F00F98AE6 /* Preview Assets.xcassets */; };
 		F8C449A12B45C48000F98AE6 /* BucketListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C449A02B45C48000F98AE6 /* BucketListTests.swift */; };
@@ -38,13 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F8142D1F2B6B5E9F002BCCAD /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
-		F8570DF42B62150F002FA47C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		F8C26E472B698E5D003C8487 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
-		F8C26E492B6B5047003C8487 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F8142D1F2B6B5E9F002BCCAD /* Content.viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.viewmodel.swift; sourceTree = "<group>"; };
+		F8570DF42B62150F002FA47C /* Location.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.model.swift; sourceTree = "<group>"; };
+		F8C26E472B698E5D003C8487 /* Edit.view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit.view.swift; sourceTree = "<group>"; };
+		F8C26E492B6B5047003C8487 /* Result.model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.model.swift; sourceTree = "<group>"; };
 		F8C4498C2B45C47E00F98AE6 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C4498F2B45C47E00F98AE6 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
-		F8C449912B45C47E00F98AE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8C449912B45C47E00F98AE6 /* Content.view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.view.swift; sourceTree = "<group>"; };
 		F8C449932B45C47F00F98AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8C449962B45C47F00F98AE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8C4499C2B45C47F00F98AE6 /* BucketListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BucketListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,11 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				F8C4498F2B45C47E00F98AE6 /* BucketListApp.swift */,
-				F8C449912B45C47E00F98AE6 /* ContentView.swift */,
-				F8C26E472B698E5D003C8487 /* EditView.swift */,
-				F8142D1F2B6B5E9F002BCCAD /* ContentView-ViewModel.swift */,
-				F8C26E492B6B5047003C8487 /* Result.swift */,
-				F8570DF42B62150F002FA47C /* Location.swift */,
+				F8C449912B45C47E00F98AE6 /* Content.view.swift */,
+				F8C26E472B698E5D003C8487 /* Edit.view.swift */,
+				F8142D1F2B6B5E9F002BCCAD /* Content.viewmodel.swift */,
+				F8C26E492B6B5047003C8487 /* Result.model.swift */,
+				F8570DF42B62150F002FA47C /* Location.model.swift */,
 				F8C449932B45C47F00F98AE6 /* Assets.xcassets */,
 				F8C449952B45C47F00F98AE6 /* Preview Content */,
 			);
@@ -269,11 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8C449922B45C47E00F98AE6 /* ContentView.swift in Sources */,
-				F8142D202B6B5E9F002BCCAD /* ContentView-ViewModel.swift in Sources */,
-				F8C26E4A2B6B5047003C8487 /* Result.swift in Sources */,
-				F8570DF52B62150F002FA47C /* Location.swift in Sources */,
-				F8C26E482B698E5D003C8487 /* EditView.swift in Sources */,
+				F8C449922B45C47E00F98AE6 /* Content.view.swift in Sources */,
+				F8142D202B6B5E9F002BCCAD /* Content.viewmodel.swift in Sources */,
+				F8C26E4A2B6B5047003C8487 /* Result.model.swift in Sources */,
+				F8570DF52B62150F002FA47C /* Location.model.swift in Sources */,
+				F8C26E482B698E5D003C8487 /* Edit.view.swift in Sources */,
 				F8C449902B45C47E00F98AE6 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
