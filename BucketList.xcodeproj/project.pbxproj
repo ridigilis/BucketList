@@ -103,11 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				F8C4498F2B45C47E00F98AE6 /* BucketListApp.swift */,
+				F8142D1F2B6B5E9F002BCCAD /* Content.viewmodel.swift */,
 				F8C449912B45C47E00F98AE6 /* Content.view.swift */,
 				F8C26E472B698E5D003C8487 /* Edit.view.swift */,
-				F8142D1F2B6B5E9F002BCCAD /* Content.viewmodel.swift */,
-				F8C26E492B6B5047003C8487 /* Result.model.swift */,
 				F8570DF42B62150F002FA47C /* Location.model.swift */,
+				F8C26E492B6B5047003C8487 /* Result.model.swift */,
 				F8C449932B45C47F00F98AE6 /* Assets.xcassets */,
 				F8C449952B45C47F00F98AE6 /* Preview Content */,
 			);
